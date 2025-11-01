@@ -133,7 +133,7 @@ displayLessons = (lessons) => {
     for (let lesson of lessons) {
         const btnDiv = document.createElement("div");
         btnDiv.innerHTML = `
-        <button id="lesson-btn-${lesson.level_no}" onclick="loadLevelword(${lesson.level_no})"class="btn btn-outline btn-primary Lesson-btn ">
+        <button id="lesson-btn-${lesson.level_no}" onclick="loadLevelword(${lesson.level_no})"class="btn btn-outline text-sky-500 Lesson-btn hover:bg-sky-300 ">
         <i class="fa-solid fa-book-open"></i> Lesson - ${lesson.level_no}
         </button>`
         levelContainer.append(btnDiv);
@@ -159,3 +159,16 @@ document.getElementById("btn-search").addEventListener("click", () => {
 
 
 
+    const faqCheckboxes = document.querySelectorAll('input[name="faq"]');
+    
+    faqCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+            if (checkbox.checked) {
+                faqCheckboxes.forEach(other => {
+                    if (other !== checkbox) {
+                        other.checked = false;
+                    }
+                });
+            }
+        });
+    });
