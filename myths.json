@@ -1,0 +1,11 @@
+[
+  { "myth": "\"You can never end a sentence with a preposition.\"", "fact": "It is perfectly fine to end a sentence with a preposition! Trying to avoid it often makes sentences sound stiff and unnatural.", "example": "\"Who are you talking to?\" (Natural)" },
+  { "myth": "\"'Irregardless' is not a real word.\"", "fact": "It actually IS in the dictionary! However, it is considered nonstandard. It means the exact same thing as 'regardless', so professionals stick to 'regardless'.", "example": "" },
+  { "myth": "\"Because 'data' is plural, you must say 'The data are clear'.\"", "fact": "While technically the plural of 'datum', in modern English 'data' is widely accepted as a singular mass noun. \"The data shows...\" is correct.", "example": "" },
+  { "myth": "\"You shouldn't start a sentence with 'And' or 'But'.\"", "fact": "This is a style preference, not a grammar rule. Starting sentences with conjunctions is a great way to add punch and flow to your writing.", "example": "And that is the truth." },
+  { "myth": "\"Split infinitives vertically ('to boldly go') are grammatically incorrect.\"", "fact": "There is no rigid rule against splitting an infinitive in English! Doing so often makes a sentence clearer and much more graceful.", "example": "\"To boldly go where no one has gone before.\"" },
+  { "myth": "\"'Literally' can never be used to exaggerate.\"", "fact": "For over 200 years, acclaimed authors have used 'literally' figuratively to add extreme emphasis to a point. Even modern dictionaries accept this definition.", "example": "\"I was literally dead from exhaustion.\"" },
+  { "myth": "\"'None' is always singular and must take a singular verb.\"", "fact": "'None' can be singular or plural depending on the context. If it means 'not any of them', a plural verb is completely acceptable.", "example": "\"None of the students are here.\"" },
+  { "myth": "\"You must use 'whom' instead of 'who' when it's the object.\"", "fact": "While technically correct in formal academia, 'whom' is dying out in modern conversational English.", "example": "\"Who are you inviting?\"" },
+  { "myth": "\"'Less' is only for uncountable nouns, 'fewer' is only for countable.\"", "fact": "While generally a good guideline, there are many exceptions. For example, we say 'less than 10 miles' because it represents a discrete total amount.", "example": "" }
+]

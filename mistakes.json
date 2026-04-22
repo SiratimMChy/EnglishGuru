@@ -1,0 +1,127 @@
+[
+    {
+        "wrong": "I am giving an exam.",
+        "right": "I am taking an exam.",
+        "reason": "In English, students 'take' exams, while teachers 'give' them."
+    },
+    {
+        "wrong": "I saw a dream last night.",
+        "right": "I had a dream last night.",
+        "reason": "Dreams are not 'seen' visually in English syntax, they are experienced or 'had'."
+    },
+    {
+        "wrong": "He is my cousin brother.",
+        "right": "He is my cousin.",
+        "reason": "The word 'cousin' does not require a gender marker like brother or sister."
+    },
+    {
+        "wrong": "I am agree with you.",
+        "right": "I agree with you.",
+        "reason": "'Agree' is a verb on its own. You don't need 'am' before it."
+    },
+    {
+        "wrong": "Discuss about the matter.",
+        "right": "Discuss the matter.",
+        "reason": "'Discuss' implies 'talking about', so adding 'about' is redundant."
+    },
+    {
+        "wrong": "She is good in English.",
+        "right": "She is good at English.",
+        "reason": "We use the preposition 'at' when talking about skills or abilities."
+    },
+    {
+        "wrong": "Does he has a car?",
+        "right": "Does he have a car?",
+        "reason": "After 'does', the base form of the verb ('have') must be used."
+    },
+    {
+        "wrong": "I will call you when I will arrive.",
+        "right": "I will call you when I arrive.",
+        "reason": "In time clauses (after when, as soon as), use present simple, not future."
+    },
+    {
+        "wrong": "Every students like the teacher.",
+        "right": "Every student likes the teacher.",
+        "reason": "'Every' is singular, so it takes a singular noun and a singular verb."
+    },
+    {
+        "wrong": "I need an advice.",
+        "right": "I need some advice.",
+        "reason": "'Advice' is an uncountable noun. It cannot take 'an' or be pluralized."
+    },
+    {
+        "wrong": "I am listening music.",
+        "right": "I am listening to music.",
+        "reason": "The verb 'listen' is always followed by the preposition 'to'."
+    },
+    {
+        "wrong": "Please reply me.",
+        "right": "Please reply to me.",
+        "reason": "'Reply' is intransitive and requires the preposition 'to' before the object."
+    },
+    {
+        "wrong": "She is married with a doctor.",
+        "right": "She is married to a doctor.",
+        "reason": "In English, a person is married 'to' someone, not 'with' them."
+    },
+    {
+        "wrong": "He did a mistake.",
+        "right": "He made a mistake.",
+        "reason": "Mistakes are 'made', not 'done'. This is a common collocation error."
+    },
+    {
+        "wrong": "I prefer coffee than tea.",
+        "right": "I prefer coffee to tea.",
+        "reason": "We use the preposition 'to' after 'prefer' when comparing two things."
+    },
+    {
+        "wrong": "He can able to do it.",
+        "right": "He can do it.",
+        "reason": "'Can' and 'able to' mean the exact same thing; using both is redundant."
+    },
+    {
+        "wrong": "My hairs are black.",
+        "right": "My hair is black.",
+        "reason": "The hair on your head is considered an uncountable noun in English."
+    },
+    {
+        "wrong": "I am going to home.",
+        "right": "I am going home.",
+        "reason": "'Home' acts as an adverb of place here, so the preposition 'to' is not needed."
+    },
+    {
+        "wrong": "You should practice to speak.",
+        "right": "You should practice speaking.",
+        "reason": "The verb 'practice' is always followed by a gerund (verb + -ing)."
+    },
+    {
+        "wrong": "I have visited London last weekend.",
+        "right": "I visited London last weekend.",
+        "reason": "Use simple past, not present perfect, when a specific past time ('last weekend') is mentioned."
+    },
+    {
+        "wrong": "Despite of the rain...",
+        "right": "Despite the rain...",
+        "reason": "The word 'despite' does not take 'of'. You can say 'in spite of', but not 'despite of'."
+    },
+    {
+        "wrong": "What is the time in your watch?",
+        "right": "What is the time by your watch?",
+        "reason": "The correct preposition to use when asking the time using a watch is 'by'."
+    },
+    {
+        "wrong": "One of my friend is here.",
+        "right": "One of my friends is here.",
+        "reason": "The phrase 'one of' must always be followed by a plural noun."
+    },
+    {
+        "wrong": "I look forward to meet you.",
+        "right": "I look forward to meeting you.",
+        "reason": "In the phrase 'look forward to', 'to' is a preposition, so it must be followed by a gerund (-ing)."
+    },
+    {
+        "wrong": "Please return back the book.",
+        "right": "Please return the book.",
+        "reason": "'Return' already means 'to give back', making 'back' redundant."
+    }
+]
