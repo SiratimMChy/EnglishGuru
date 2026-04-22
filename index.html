@@ -27,11 +27,16 @@
         <div class="w-11/12 max-w-7xl mx-auto flex justify-between items-center py-4">
             <!-- Logo -->
             <div class="flex-none">
-                <a href="index.html" class="flex items-center gap-2 group">
-                    <div class="w-10 h-10 bg-sky-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-sky-100 group-hover:rotate-6 transition-transform">
-                        <i class="fa-solid fa-graduation-cap"></i>
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="relative w-11 h-11 bg-gradient-to-tr from-sky-600 to-sky-400 rounded-2xl flex items-center justify-center text-white shadow-sm group-hover:scale-105 group-hover:rotate-3 transition-all duration-500 overflow-hidden">
+                        <!-- Subtle background sparkle effect -->
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-white/20 blur-xl"></div>
+                        <i class="fa-solid fa-book-open-reader text-xl relative z-10"></i>
                     </div>
-                    <span class="text-2xl font-black text-slate-800 tracking-tight">English<span class="text-sky-500">Guru</span></span>
+                    <div class="flex flex-col leading-none">
+                        <span class="text-2xl font-black text-slate-800 tracking-tighter">English<span class="text-sky-500">Guru</span></span>
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mt-1">Mastery Platform</span>
+                    </div>
                 </a>
             </div>
 
@@ -40,7 +45,7 @@
                 <a href="#mistakes" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">Daily Mistakes</a>
                 <a href="#lessons" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">Lessons</a>
                 <a href="#videos" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">Video Academy</a>
-                <a href="#FAQ" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">Support</a>
+                <a href="#FAQ" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">FAQ</a>
             </div>
 
             <!-- Mobile Menu Toggle -->
@@ -53,7 +58,7 @@
                         <li><a href="#mistakes" class="py-3">Daily Mistakes</a></li>
                         <li><a href="#lessons" class="py-3">Lessons</a></li>
                         <li><a href="#videos" class="py-3">Video Academy</a></li>
-                        <li><a href="#FAQ" class="py-3">Support</a></li>
+                        <li><a href="#FAQ" class="py-3">FAQ</a></li>
                     </ul>
                 </div>
             </div>
@@ -496,10 +501,12 @@
     <footer class="p-10 text-center bg-sky-50/50">
         <div class="flex flex-col items-center space-y-4">
             <div>
-                <a href="" class="flex items-center gap-1">
-                    <span class="text-lg font-bold text-sky-500">English</span>
-                    <img class="w-10 h-10" src="./assets/graduation.png" alt="">
-                    <span class="text-lg font-semibold font-bangla text-slate-700">গুরু</span></a>
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-sky-500 rounded-lg flex items-center justify-center text-white text-xs">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                    </div>
+                    <span class="text-xl font-black text-slate-800 tracking-tight">English<span class="text-sky-500">Guru</span></span>
+                </a>
             </div>
             <div class="flex mt-2 space-x-6">
                 <a href="#"><i class="text-2xl fa-brands fa-facebook text-sky-500 hover:text-sky-600 transition-colors"></i></a>
