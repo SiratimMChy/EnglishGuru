@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Fluency Hub - English Guru</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 min-h-screen">
+    <!-- Navbar -->
+    <header class="sticky top-0 z-[100] w-full bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="w-11/12 max-w-7xl mx-auto flex justify-between items-center py-4">
+            <!-- Logo -->
+            <div class="flex-none">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="relative w-11 h-11 bg-gradient-to-tr from-sky-600 to-sky-400 rounded-2xl flex items-center justify-center text-white shadow-sm group-hover:scale-105 group-hover:rotate-3 transition-all duration-500 overflow-hidden">
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-white/20 blur-xl"></div>
+                        <i class="fa-solid fa-book-open-reader text-xl relative z-10"></i>
+                    </div>
+                    <div class="flex flex-col leading-none">
+                        <span class="text-2xl font-black text-slate-800 tracking-tighter">English<span class="text-sky-500">Guru</span></span>
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mt-1">Mastery Platform</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="hidden lg:flex flex-1 justify-center items-center gap-10">
+                <a href="index.html" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">Home</a>
+                <a href="index.html#mistakes" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">Daily Mistakes</a>
+                <a href="grammar.html" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">Grammar</a>
+                <a href="reading.html" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">Reading</a>
+                <a href="spoken.html" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">Speaking</a>
+                <a href="index.html#FAQ" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">FAQ</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="flex-none lg:hidden">
+                <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="p-4 mt-4 shadow-xl menu dropdown-content bg-white rounded-2xl z-[1] w-64 border border-slate-100 uppercase text-xs font-bold tracking-widest">
+                        <li><a href="index.html" class="py-3">Home</a></li>
+                        <li><a href="index.html#mistakes" class="py-3">Daily Mistakes</a></li>
+                        <li><a href="grammar.html" class="py-3">Grammar</a></li>
+                        <li><a href="reading.html" class="py-3">Reading</a></li>
+                        <li><a href="spoken.html" class="py-3">Speaking</a></li>
+                        <li><a href="index.html#FAQ" class="py-3">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="w-11/12 max-w-6xl mx-auto py-16">
+        <div class="text-center mb-20">
+            <span class="px-6 py-2 bg-gradient-to-r from-green-100 to-emerald-100 text-green-700 rounded-full text-sm font-bold uppercase tracking-widest mb-6 inline-block border border-green-200">Professional Reading Program</span>
+            <h1 class="text-6xl font-black text-slate-800 mb-6 leading-tight">Reading for <span class="text-green-500">Fluency Mastery</span></h1>
+            <p class="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">Develop advanced comprehension skills through carefully curated passages designed to enhance vocabulary, critical thinking, and reading speed for professional excellence.</p>
+            
+            <!-- Reading Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm">
+                    <div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 mx-auto mb-4">
+                        <i class="fa-solid fa-book-open text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-2">3 Difficulty Levels</h3>
+                    <p class="text-sm text-slate-500">Progressive complexity for skill development</p>
+                </div>
+                <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm">
+                    <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 mx-auto mb-4">
+                        <i class="fa-solid fa-brain text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-2">Critical Thinking</h3>
+                    <p class="text-sm text-slate-500">Analytical questions for deeper understanding</p>
+                </div>
+                <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm">
+                    <div class="w-12 h-12 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-600 mx-auto mb-4">
+                        <i class="fa-solid fa-stopwatch text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-2">Speed Tracking</h3>
+                    <p class="text-sm text-slate-500">Monitor WPM and comprehension progress</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm mb-16">
+            <h2 class="text-2xl font-bold text-slate-800 mb-6 text-center">Select Reading Level</h2>
+            <div class="flex justify-center gap-6">
+                <button onclick="loadPassage('beginner')" id="btn-beginner" class="lvl-btn active flex flex-col items-center p-6 rounded-2xl font-bold bg-green-500 text-white shadow-lg shadow-green-100 transition-all hover:scale-105 min-w-[140px]">
+                    <i class="fa-solid fa-seedling text-2xl mb-2"></i>
+                    <span class="text-sm">Beginner</span>
+                    <span class="text-xs opacity-80">Foundation Level</span>
+                </button>
+                <button onclick="loadPassage('intermediate')" id="btn-intermediate" class="lvl-btn flex flex-col items-center p-6 rounded-2xl font-bold bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all hover:scale-105 min-w-[140px]">
+                    <i class="fa-solid fa-mountain text-2xl mb-2"></i>
+                    <span class="text-sm">Intermediate</span>
+                    <span class="text-xs opacity-60">Professional Level</span>
+                </button>
+                <button onclick="loadPassage('advanced')" id="btn-advanced" class="lvl-btn flex flex-col items-center p-6 rounded-2xl font-bold bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all hover:scale-105 min-w-[140px]">
+                    <i class="fa-solid fa-crown text-2xl mb-2"></i>
+                    <span class="text-sm">Advanced</span>
+                    <span class="text-xs opacity-60">Expert Level</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+            <!-- Reading Interface -->
+            <div class="lg:col-span-2 space-y-10">
+                <div class="bg-white rounded-[50px] p-12 border border-slate-100 shadow-sm relative">
+                    <h2 id="passage-title" class="text-3xl font-black text-slate-800 mb-8 border-l-4 border-sky-500 pl-6">Loading...</h2>
+                    <div id="passage-content" class="text-xl leading-relaxed text-slate-600 italic mb-10">...</div>
+                    <div class="flex justify-between items-center pt-8 border-t border-slate-50">
+                        <span id="word-info" class="text-xs font-bold text-slate-400 uppercase tracking-widest">0 Words</span>
+                        <div class="flex items-center gap-4">
+                            <span id="timer" class="text-xl font-mono text-sky-500 font-bold">00:00</span>
+                            <button id="timer-btn" onclick="toggleTimer()" class="btn btn-sm bg-slate-900 border-none text-white px-6 rounded-xl">Start Timer</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-[50px] p-12 border border-slate-100 shadow-sm">
+                    <h3 class="text-2xl font-black text-slate-800 mb-8 flex items-center gap-3">
+                        <i class="fa-solid fa-brain text-sky-500"></i> Critical Thinking Questions
+                    </h3>
+                    <div id="questions" class="space-y-6">
+                        <!-- Questions -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spotlight Sidebar -->
+            <div class="space-y-8">
+                <div class="bg-slate-900 rounded-[40px] p-10 text-white shadow-2xl">
+                    <h3 class="text-xl font-bold mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-lightbulb text-amber-400"></i> Vocabulary Spotlight
+                    </h3>
+                    <div id="vocabulary" class="space-y-4 mb-6">
+                        <!-- Vocab -->
+                    </div>
+                    <!-- Pagination Controls -->
+                    <div id="vocab-pagination" class="flex items-center justify-between pt-6 border-t border-white/10">
+                        <button onclick="changeVocabPage(-1)" id="vocab-prev" class="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-xl text-sm font-bold transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
+                            <i class="fa-solid fa-chevron-left mr-2"></i>Previous
+                        </button>
+                        <div class="text-sm font-medium">
+                            <span id="vocab-page-info" class="text-amber-400">Page 1</span>
+                        </div>
+                        <button onclick="changeVocabPage(1)" id="vocab-next" class="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-xl text-sm font-bold transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
+                            Next<i class="fa-solid fa-chevron-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="p-8 bg-sky-50 rounded-[32px] border border-sky-100 flex items-center gap-6">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-sky-500 shadow-sm">
+                        <i class="fa-solid fa-flag-checkered"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sky-900">Weekly Goal</h4>
+                        <p class="text-xs text-sky-700">Improve by 5 WPM each week.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="p-10 text-center bg-white border-t border-slate-100 mt-20">
+        <div class="flex flex-col items-center space-y-4">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-sky-500 rounded-lg flex items-center justify-center text-white text-xs">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                </div>
+                <span class="text-xl font-black text-slate-800 tracking-tight">English<span class="text-sky-500">Guru</span></span>
+            </a>
+            <p class="text-slate-400 text-sm font-medium">© 2025 English Guru Mastery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const content = {
+            beginner: {
+                title: "The Digital Revolution in Education",
+                text: "Technology has fundamentally transformed the educational landscape, creating unprecedented opportunities for personalized learning experiences. Students now access comprehensive digital libraries, participate in interactive virtual classrooms, and collaborate with peers across geographical boundaries. Educational institutions are implementing innovative teaching methodologies that incorporate multimedia presentations, gamification elements, and adaptive assessment systems. This technological integration enhances student engagement while providing educators with sophisticated analytics to monitor individual progress and identify areas requiring additional support.",
+                vocab: [
+                    "Technology - application of scientific knowledge for practical purposes",
+                    "Fundamentally - in a basic and important way",
+                    "Transformed - changed completely in form or appearance",
+                    "Educational - relating to the process of teaching and learning",
+                    "Landscape - the overall situation or environment",
+                    "Unprecedented - never done or known before",
+                    "Opportunities - chances for advancement or progress",
+                    "Personalized - designed to meet individual requirements",
+                    "Experiences - practical contact with events or knowledge",
+                    "Comprehensive - complete and including everything necessary",
+                    "Digital - relating to computer technology",
+                    "Libraries - collections of books and information resources",
+                    "Interactive - allowing two-way communication",
+                    "Virtual - existing in computer simulation",
+                    "Classrooms - rooms where teaching takes place",
+                    "Collaborate - work jointly on an activity",
+                    "Geographical - relating to physical location",
+                    "Boundaries - limits or borders",
+                    "Institutions - established organizations",
+                    "Implementing - putting a plan into effect",
+                    "Innovative - featuring new methods or ideas",
+                    "Methodologies - systems of methods used",
+                    "Incorporate - include as part of a whole",
+                    "Multimedia - using multiple forms of media",
+                    "Presentations - formal displays of information",
+                    "Gamification - applying game elements to non-game contexts",
+                    "Elements - essential parts of something",
+                    "Adaptive - able to adjust to new conditions",
+                    "Assessment - evaluation of abilities or qualities",
+                    "Integration - combining parts into a whole",
+                    "Enhances - improves or increases quality",
+                    "Engagement - active participation or involvement",
+                    "Sophisticated - highly developed and complex",
+                    "Analytics - systematic analysis of data",
+                    "Individual - relating to a single person",
+                    "Progress - forward movement toward a goal"
+                ],
+                questions: [
+                    "How has technology changed the way students access educational resources?", 
+                    "What are the main benefits of implementing multimedia and gamification in education?", 
+                    "How do sophisticated analytics help educators improve their teaching methods?"
+                ]
+            },
+            intermediate: {
+                title: "Sustainable Business Practices in the Modern Economy",
+                text: "Contemporary corporations are increasingly recognizing the imperative to integrate sustainable practices into their operational frameworks, driven by environmental consciousness and stakeholder expectations. This paradigm shift encompasses comprehensive strategies including renewable energy adoption, circular economy principles, and ethical supply chain management. Organizations are discovering that sustainability initiatives not only mitigate environmental impact but also generate substantial economic benefits through operational efficiency, brand differentiation, and risk mitigation. The convergence of technological innovation and environmental stewardship is creating unprecedented opportunities for businesses to achieve competitive advantage while contributing to global sustainability objectives.",
+                vocab: [
+                    "Contemporary - belonging to the present time",
+                    "Corporations - large business organizations",
+                    "Recognizing - acknowledging or identifying",
+                    "Imperative - absolutely necessary or urgent",
+                    "Integrate - combine or bring together",
+                    "Sustainable - able to be maintained long-term",
+                    "Operational - relating to business operations",
+                    "Frameworks - basic structures or systems",
+                    "Environmental - relating to natural surroundings",
+                    "Consciousness - awareness and concern",
+                    "Stakeholder - person with interest in business",
+                    "Expectations - beliefs about future outcomes",
+                    "Paradigm - typical example or pattern",
+                    "Encompasses - includes comprehensively",
+                    "Comprehensive - complete and thorough",
+                    "Strategies - plans of action",
+                    "Renewable - able to be replenished naturally",
+                    "Adoption - process of taking up or using",
+                    "Circular - following a cycle of reuse",
+                    "Principles - fundamental rules or beliefs",
+                    "Ethical - morally correct behavior",
+                    "Supply chain - network of production and distribution",
+                    "Management - process of controlling resources",
+                    "Organizations - structured groups or companies",
+                    "Initiatives - new plans or processes",
+                    "Mitigate - make less severe or serious",
+                    "Impact - strong effect or influence",
+                    "Generate - produce or create",
+                    "Substantial - considerable in importance",
+                    "Economic - relating to money and business",
+                    "Benefits - advantages or positive outcomes",
+                    "Efficiency - achieving maximum productivity",
+                    "Differentiation - process of distinguishing",
+                    "Mitigation - action of reducing severity",
+                    "Convergence - coming together of different elements",
+                    "Innovation - introduction of new ideas",
+                    "Stewardship - responsible management",
+                    "Competitive - relating to business competition",
+                    "Advantage - condition of being ahead",
+                    "Contributing - helping to bring about",
+                    "Objectives - goals or targets to achieve"
+                ],
+                questions: [
+                    "What factors are driving corporations to adopt sustainable business practices?", 
+                    "Explain how sustainability initiatives can provide economic benefits to organizations.", 
+                    "How does the convergence of technology and environmental stewardship create business opportunities?"
+                ]
+            },
+            advanced: {
+                title: "The Neuroscience of Decision-Making and Cognitive Biases",
+                text: "Contemporary neuroscientific research has illuminated the intricate mechanisms underlying human decision-making processes, revealing the profound influence of cognitive biases on rational judgment. The prefrontal cortex, responsible for executive functions, often conflicts with the limbic system's emotional responses, creating internal tension that affects choice architecture. Behavioral economists have identified systematic deviations from rational decision-making, including confirmation bias, anchoring effects, and availability heuristics, which demonstrate the limitations of purely logical reasoning. Understanding these neurological foundations enables the development of more effective decision-making frameworks and highlights the importance of metacognitive awareness in professional and personal contexts.",
+                vocab: [
+                    "Contemporary - modern or current",
+                    "Neuroscientific - relating to brain science",
+                    "Illuminated - made clear or enlightened",
+                    "Intricate - very complicated or detailed",
+                    "Mechanisms - systems of parts working together",
+                    "Underlying - forming the basis of something",
+                    "Processes - series of actions or steps",
+                    "Revealing - making known or visible",
+                    "Profound - very great or intense",
+                    "Influence - power to affect or change",
+                    "Cognitive - relating to mental processes",
+                    "Biases - prejudices or inclinations",
+                    "Rational - based on reason or logic",
+                    "Judgment - ability to make decisions",
+                    "Prefrontal - front part of brain",
+                    "Cortex - outer layer of brain",
+                    "Executive - relating to management functions",
+                    "Functions - purposes or roles",
+                    "Conflicts - disagreements or clashes",
+                    "Limbic - brain system for emotions",
+                    "Emotional - relating to feelings",
+                    "Responses - reactions to stimuli",
+                    "Internal - existing within something",
+                    "Tension - mental or emotional strain",
+                    "Architecture - structure or framework",
+                    "Behavioral - relating to conduct",
+                    "Economists - experts in economic systems",
+                    "Systematic - methodical and organized",
+                    "Deviations - departures from normal",
+                    "Confirmation - supporting evidence",
+                    "Anchoring - fixing on initial information",
+                    "Effects - results or consequences",
+                    "Availability - ease of recall or access",
+                    "Heuristics - mental shortcuts for decisions",
+                    "Demonstrate - clearly show or prove",
+                    "Limitations - restrictions or boundaries",
+                    "Logical - based on clear reasoning",
+                    "Reasoning - process of thinking logically",
+                    "Neurological - relating to nervous system",
+                    "Foundations - basic underlying principles",
+                    "Enables - makes possible or practical",
+                    "Development - process of growth",
+                    "Effective - successful in producing results",
+                    "Frameworks - supporting structures",
+                    "Highlights - emphasizes or draws attention",
+                    "Importance - quality of being significant",
+                    "Metacognitive - awareness of thinking processes",
+                    "Awareness - knowledge or perception",
+                    "Professional - relating to work or career",
+                    "Contexts - circumstances or situations"
+                ],
+                questions: [
+                    "Analyze the conflict between the prefrontal cortex and limbic system in decision-making processes.", 
+                    "Evaluate how cognitive biases like confirmation bias and anchoring effects impact rational judgment.", 
+                    "Discuss the practical implications of neuroscientific research for improving decision-making in professional environments."
+                ]
+            }
+        };
+
+        let timerActive = false;
+        let seconds = 0;
+        let interval;
+        let currentVocabPage = 1;
+        let vocabPerPage = 11;
+        let currentPassageVocab = [];
+
+        function loadPassage(lvl) {
+            const data = content[lvl];
+            document.getElementById('passage-title').innerText = data.title;
+            document.getElementById('passage-content').innerText = `"${data.text}"`;
+            document.getElementById('word-info').innerText = `${data.text.split(' ').length} Words`;
+            
+            // Store current vocabulary and reset pagination
+            currentPassageVocab = data.vocab;
+            currentVocabPage = 1;
+            displayVocabPage();
+            
+            // Questions
+            document.getElementById('questions').innerHTML = data.questions.map((q, i) => `
+                <div class="flex gap-6 p-6 bg-slate-50 rounded-3xl border border-slate-100 italic font-medium text-slate-600">
+                    <span class="font-black text-sky-500">${i+1}.</span> ${q}
+                </div>
+            `).join('');
+
+            // Reset
+            resetTimer();
+
+            // Active btn
+            document.querySelectorAll('.lvl-btn').forEach(btn => {
+                if (btn.id === `btn-${lvl}`) {
+                    btn.className = "lvl-btn active flex flex-col items-center p-6 rounded-2xl font-bold bg-green-500 text-white shadow-lg shadow-green-100 transition-all hover:scale-105 min-w-[140px]";
+                } else {
+                    btn.className = "lvl-btn flex flex-col items-center p-6 rounded-2xl font-bold bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all hover:scale-105 min-w-[140px]";
+                }
+            });
+        }
+
+        function displayVocabPage() {
+            const startIndex = (currentVocabPage - 1) * vocabPerPage;
+            const endIndex = startIndex + vocabPerPage;
+            const pageVocab = currentPassageVocab.slice(startIndex, endIndex);
+            const totalPages = Math.ceil(currentPassageVocab.length / vocabPerPage);
+            
+            // Display vocabulary items
+            document.getElementById('vocabulary').innerHTML = pageVocab.map(v => `
+                <div class="border-b border-white/10 pb-4 last:border-0">
+                    <span class="text-amber-400 font-bold">${v.split(' - ')[0]}:</span>
+                    <p class="text-sm text-slate-300 mt-1">${v.split(' - ')[1]}</p>
+                </div>
+            `).join('');
+            
+            // Update pagination info
+            document.getElementById('vocab-page-info').innerText = `Page ${currentVocabPage} of ${totalPages}`;
+            
+            // Update button states
+            document.getElementById('vocab-prev').disabled = currentVocabPage === 1;
+            document.getElementById('vocab-next').disabled = currentVocabPage === totalPages;
+        }
+
+        function changeVocabPage(direction) {
+            const totalPages = Math.ceil(currentPassageVocab.length / vocabPerPage);
+            const newPage = currentVocabPage + direction;
+            
+            if (newPage >= 1 && newPage <= totalPages) {
+                currentVocabPage = newPage;
+                displayVocabPage();
+            }
+        }
+
+        function toggleTimer() {
+            const btn = document.getElementById('timer-btn');
+            if (timerActive) {
+                clearInterval(interval);
+                btn.innerText = "Resume";
+            } else {
+                interval = setInterval(() => {
+                    seconds++;
+                    const mins = Math.floor(seconds / 60).toString().padStart(2, '0');
+                    const secs = (seconds % 60).toString().padStart(2, '0');
+                    document.getElementById('timer').innerText = `${mins}:${secs}`;
+                }, 1000);
+                btn.innerText = "Pause";
+            }
+            timerActive = !timerActive;
+        }
+
+        function resetTimer() {
+            clearInterval(interval);
+            timerActive = false;
+            seconds = 0;
+            document.getElementById('timer').innerText = "00:00";
+            document.getElementById('timer-btn').innerText = "Start Timer";
+        }
+
+        loadPassage('beginner');
+    </script>
+</body>
+</html>

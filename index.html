@@ -11,10 +11,8 @@
 
 
     <!---Fontlink-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
@@ -42,9 +40,11 @@
 
             <!-- Navigation Links -->
             <div class="hidden lg:flex flex-1 justify-center items-center gap-10">
+                <a href="index.html" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">Home</a>
                 <a href="#mistakes" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">Daily Mistakes</a>
-                <a href="#lessons" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">Lessons</a>
-                <a href="#videos" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">Video Academy</a>
+                <a href="grammar.html" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">Grammar</a>
+                <a href="reading.html" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">Reading</a>
+                <a href="spoken.html" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">Speaking</a>
                 <a href="#FAQ" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">FAQ</a>
             </div>
 
@@ -55,9 +55,11 @@
                         <i class="fa-solid fa-bars-staggered text-xl text-slate-800"></i>
                     </div>
                     <ul tabindex="0" class="p-4 mt-4 shadow-xl menu dropdown-content bg-white rounded-2xl z-[1] w-64 border border-slate-100 uppercase text-xs font-bold tracking-widest">
+                        <li><a href="index.html" class="py-3">Home</a></li>
                         <li><a href="#mistakes" class="py-3">Daily Mistakes</a></li>
-                        <li><a href="#lessons" class="py-3">Lessons</a></li>
-                        <li><a href="#videos" class="py-3">Video Academy</a></li>
+                        <li><a href="grammar.html" class="py-3">Grammar</a></li>
+                        <li><a href="reading.html" class="py-3">Reading</a></li>
+                        <li><a href="spoken.html" class="py-3">Speaking</a></li>
                         <li><a href="#FAQ" class="py-3">FAQ</a></li>
                     </ul>
                 </div>
@@ -80,77 +82,43 @@
         </div>
     </section>
 
-    <!-- Fluency Roadmap Section -->
-    <section id="roadmap" class="w-11/12 max-w-7xl mx-auto my-20">
-        <div class="text-center mb-16">
-            <h2 class="mb-4 text-4xl font-bold text-center">
-                <span class="text-sky-500">Your Path to </span>Fluency
-            </h2>
-            <p class="mt-4 max-w-2xl text-lg text-slate-500 mx-auto">A structured, step-by-step approach to master the English language.</p>
-        </div>
-
-        <div class="relative">
-            <!-- Connecting Line for Desktop -->
-            <div class="hidden lg:block absolute top-1/2 left-0 w-full h-1 bg-sky-100 -translate-y-1/2 z-0"></div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 relative z-10">
-                
-                <!-- Step 1 -->
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-100 relative group hover:shadow-md hover:border-sky-200 transition-all duration-300">
-                    <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-sky-100 flex items-center justify-center border-4 border-white shadow-sm">
-                        <span class="text-sky-600 font-bold text-lg">1</span>
-                    </div>
-                    <div class="text-center mt-6">
-                        <div class="w-16 h-16 mx-auto bg-sky-50 flex items-center justify-center rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                            <i class="fa-solid fa-spell-check text-2xl text-sky-500"></i>
+    <!-- Spoken English & Practice Section -->
+    <section id="spoken" class="w-11/12 max-w-6xl mx-auto my-24 border-t border-slate-100 pt-24">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="bg-white p-12 rounded-[50px] shadow-2xl shadow-sky-100 border border-slate-50 relative overflow-hidden">
+                <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-emerald-100 rounded-full blur-3xl opacity-50"></div>
+                <div class="relative z-10 space-y-8">
+                    <div class="flex items-center gap-6">
+                        <div class="w-16 h-16 bg-slate-900 rounded-3xl flex items-center justify-center text-white text-2xl shadow-xl">
+                            <i class="fa-solid fa-comments"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-800 mb-2">Build Vocabulary</h3>
-                        <p class="text-slate-500 text-sm">Start by learning high-frequency words to build a strong foundation.</p>
+                        <div>
+                            <h4 class="text-xl font-black text-slate-800">Job Interview Prep</h4>
+                            <p class="text-xs text-slate-400 font-bold uppercase tracking-widest">Scenario 01</p>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-3xl italic text-slate-500 text-sm border border-slate-100">
+                        "Tell us about a time you handled a difficult client..."
+                    </div>
+                    <div class="flex justify-between items-center bg-emerald-50 p-4 rounded-2xl border border-emerald-100">
+                         <span class="text-xs font-bold text-emerald-600">Daily Challenge Active</span>
+                         <i class="fa-solid fa-circle-check text-emerald-500"></i>
                     </div>
                 </div>
-
-                <!-- Step 2 -->
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-100 relative group hover:shadow-md hover:border-sky-200 transition-all duration-300">
-                    <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-sky-100 flex items-center justify-center border-4 border-white shadow-sm">
-                        <span class="text-sky-600 font-bold text-lg">2</span>
-                    </div>
-                    <div class="text-center mt-6">
-                        <div class="w-16 h-16 mx-auto bg-sky-50 flex items-center justify-center rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                            <i class="fa-solid fa-layer-group text-2xl text-sky-500"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-800 mb-2">Master Grammar</h3>
-                        <p class="text-slate-500 text-sm">Understand the rules to construct perfect sentences intuitively.</p>
-                    </div>
+            </div>
+            <div>
+                <h2 class="mb-6 text-5xl font-extrabold">
+                    <span class="text-sky-500">Spoken </span>English
+                </h2>
+                <p class="text-xl text-slate-500 font-medium mb-8">Master real-life conversations with ice breakers, phonetic tips, and immersive roleplay.</p>
+                <div class="space-y-4 mb-10 font-bold text-slate-600">
+                    <div class="flex items-center gap-4"><i class="fa-solid fa-microphone-lines text-sky-500"></i> 5 Daily Speaking Challenges</div>
+                    <div class="flex items-center gap-4"><i class="fa-solid fa-ear-listen text-sky-500"></i> Phonetic & Pronunciation Tips</div>
+                    <div class="flex items-center gap-4"><i class="fa-solid fa-people-arrows text-sky-500"></i> Scenario-based Roleplays</div>
                 </div>
-
-                <!-- Step 3 -->
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-100 relative group hover:shadow-md hover:border-sky-200 transition-all duration-300">
-                    <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-sky-100 flex items-center justify-center border-4 border-white shadow-sm">
-                        <span class="text-sky-600 font-bold text-lg">3</span>
-                    </div>
-                    <div class="text-center mt-6">
-                        <div class="w-16 h-16 mx-auto bg-sky-50 flex items-center justify-center rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                            <i class="fa-solid fa-headphones-simple text-2xl text-sky-500"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-800 mb-2">Listen & Speak</h3>
-                        <p class="text-slate-500 text-sm">Improve your listening skills and start speaking with confidence.</p>
-                    </div>
-                </div>
-
-                <!-- Step 4 -->
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-100 relative group hover:shadow-md hover:border-sky-200 transition-all duration-300">
-                    <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-sky-100 flex items-center justify-center border-4 border-white shadow-sm">
-                        <span class="text-sky-600 font-bold text-lg">4</span>
-                    </div>
-                    <div class="text-center mt-6">
-                        <div class="w-16 h-16 mx-auto bg-sky-50 flex items-center justify-center rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                            <i class="fa-solid fa-comments text-2xl text-sky-500"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-800 mb-2">Fluent Conversation</h3>
-                        <p class="text-slate-500 text-sm">Engage in real-life scenarios with natural, flowing English.</p>
-                    </div>
-                </div>
-
+                <a href="spoken.html" class="inline-flex items-center gap-3 px-10 py-4 bg-slate-900 text-white rounded-2xl font-black shadow-xl hover:bg-sky-500 transition-all">
+                    Master Speaking <i class="fa-solid fa-headset"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -301,6 +269,45 @@
                 </div>
             </div>
 
+        </div>
+    </section>
+
+    <!-- Grammar Essentials Section -->
+    <section id="grammar" class="w-11/12 max-w-6xl mx-auto my-24 border-t border-slate-100 pt-24">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="mb-6 text-5xl font-extrabold">
+                    <span class="text-sky-500">Grammar </span>Essentials
+                </h2>
+                <p class="text-xl text-slate-500 font-medium mb-8">Master the building blocks of English with our complete guide for all levels.</p>
+                <div class="space-y-4 mb-10">
+                    <div class="flex items-center gap-4 text-slate-600 font-bold">
+                        <i class="fa-solid fa-check-circle text-sky-500"></i> Easy-to-understand explanations
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-600 font-bold">
+                        <i class="fa-solid fa-check-circle text-sky-500"></i> Beginner & Intermediate tracks
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-600 font-bold">
+                        <i class="fa-solid fa-check-circle text-sky-500"></i> Interactive practice quizzes
+                    </div>
+                </div>
+                <a href="grammar.html" class="inline-flex items-center gap-3 px-10 py-4 bg-sky-500 text-white rounded-2xl font-black shadow-xl shadow-sky-100 hover:scale-105 transition-all">
+                    Start Learning Grammar <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="bg-white p-12 rounded-[50px] shadow-2xl shadow-sky-100 border border-slate-50 relative overflow-hidden">
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-sky-100 rounded-full blur-3xl opacity-50"></div>
+                <div class="relative z-10 space-y-6">
+                    <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100">
+                        <p class="text-[10px] uppercase font-bold text-slate-400 mb-2">Subject-Verb Agreement</p>
+                        <p class="text-slate-800 font-bold">"The guru <span class="text-sky-500 text-lg">guides</span> the seeker."</p>
+                    </div>
+                    <div class="p-6 bg-sky-50 rounded-3xl border border-sky-100">
+                        <p class="text-[10px] uppercase font-bold text-sky-400 mb-2">Zero Conditional</p>
+                        <p class="text-slate-800 font-bold italic">"If you <span class="text-sky-500">practice</span>, you <span class="text-sky-500">learn</span>."</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -455,6 +462,35 @@
             </div>
         </div>
     </dialog>
+
+    <!-- Reading for Fluency Section -->
+    <section id="reading" class="w-11/12 max-w-6xl mx-auto my-24 border-t border-slate-100 pt-24">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="order-2 lg:order-1 bg-slate-900 rounded-[50px] p-12 text-white relative shadow-2xl">
+                 <div class="absolute -top-10 -left-10 w-40 h-40 bg-sky-500/20 rounded-full blur-3xl"></div>
+                 <div class="relative z-10">
+                    <span class="px-4 py-1 bg-sky-500 rounded-full text-[10px] font-bold uppercase tracking-widest mb-6 inline-block">Flash Card</span>
+                    <h3 class="text-3xl font-black mb-6 leading-tight">Can you read <span class="text-sky-400">100 Words</span> in a minute?</h3>
+                    <p class="text-slate-400 mb-8 italic">"Fluency is the ability to read a text with appropriate speed, accuracy, and proper expression..."</p>
+                    <div class="flex items-center gap-2 text-sky-400 font-bold mb-8">
+                        <i class="fa-solid fa-stopwatch"></i> Live Timer Task Available
+                    </div>
+                    <a href="reading.html" class="btn bg-white border-none text-slate-900 hover:bg-sky-500 hover:text-white px-8 rounded-2xl font-black w-full sm:w-auto">Start Reading Challenge</a>
+                 </div>
+            </div>
+            <div class="order-1 lg:order-2">
+                <h2 class="mb-6 text-5xl font-extrabold">
+                    <span class="text-sky-500">Reading </span>for Fluency
+                </h2>
+                <p class="text-xl text-slate-500 font-medium mb-8">Level up your reading speed and comprehension with interactive speed tasks.</p>
+                <div class="space-y-4 mb-10 text-slate-600 font-bold">
+                    <div class="flex items-center gap-4"><i class="fa-solid fa-bolt text-sky-500"></i> Real-time speed tracking</div>
+                    <div class="flex items-center gap-4"><i class="fa-solid fa-graduation-cap text-sky-500"></i> Contextual strategy tips</div>
+                    <div class="flex items-center gap-4"><i class="fa-solid fa-chart-line text-sky-500"></i> Performance benchmarks</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- FAQ Section -->
     <section id="FAQ" class="w-11/12 max-w-6xl mx-auto my-24 border-t border-slate-100 pt-24">

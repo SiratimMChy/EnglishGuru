@@ -36,7 +36,32 @@ const specialLesson7Words = [
     { id: 2002, word: "Pragmatic", meaning: "বাস্তবধর্মী", pronunciation: "prag-mat-ik", sentence: "We need a pragmatic approach to solve this complex problem.", synonyms: ["practical", "realistic", "sensible"] },
     { id: 2003, word: "Resilient", meaning: "সহনশীল", pronunciation: "ri-zil-yuhnt", sentence: "The community was resilient and rebuilt quickly after the storm.", synonyms: ["tough", "strong", "flexible"] },
     { id: 2004, word: "Meticulous", meaning: "অতি সতর্ক", pronunciation: "muh-tik-yuh-luhs", sentence: "She is meticulous about her work, checking every detail twice.", synonyms: ["careful", "precise", "thorough"] },
-    { id: 2005, word: "Benevolent", meaning: "পরোপকারী", pronunciation: "buh-nev-uh-luhnt", sentence: "The benevolent billionaire donated millions to the local hospital.", synonyms: ["kind", "generous", "charitable"] }
+    { id: 2005, word: "Benevolent", meaning: "পরোপকারী", pronunciation: "buh-nev-uh-luhnt", sentence: "The benevolent billionaire donated millions to the local hospital.", synonyms: ["kind", "generous", "charitable"] },
+    { id: 2006, word: "Alleviate", meaning: "উপশম করা", pronunciation: "uh-lee-vee-eyt", sentence: "The new medicine will alleviate the pain significantly.", synonyms: ["ease", "relieve", "lessen"] },
+    { id: 2007, word: "Candor", meaning: "সরলতা/স্পষ্টবাদিতা", pronunciation: "kan-der", sentence: "I appreciate your candor in discussing the mistakes.", synonyms: ["honesty", "frankness", "openness"] },
+    { id: 2008, word: "Diligent", meaning: "পরিশ্রমী", pronunciation: "dil-uh-juhnt", sentence: "A diligent student always succeeds in the end.", synonyms: ["hardworking", "industrious", "attentive"] },
+    { id: 2009, word: "Empower", meaning: "ক্ষমতায়ন করা", pronunciation: "em-pou-er", sentence: "Education empowers people to make better choices.", synonyms: ["authorize", "enable", "strengthen"] },
+    { id: 2010, word: "Formidable", meaning: "দুর্ধর্ষ", pronunciation: "for-muh-duh-buhl", sentence: "He faced a formidable opponent in the chess championship.", synonyms: ["daunting", "challenging", "mighty"] },
+    { id: 2011, word: "Gregarious", meaning: "মিশুক/সামাজিক", pronunciation: "gruh-gair-ee-uhs", sentence: "Elephants are gregarious animals that live in large herds.", synonyms: ["sociable", "outgoing", "friendly"] },
+    { id: 2012, word: "Humble", meaning: "বিনয়ী", pronunciation: "huhm-buhl", sentence: "Despite his success, he remains a very humble person.", synonyms: ["modest", "respectful", "meek"] },
+    { id: 2013, word: "Innovative", meaning: "উদ্ভাবনী", pronunciation: "in-uh-vey-tiv", sentence: "The company won an award for its innovative products.", synonyms: ["creative", "modern", "original"] },
+    { id: 2014, word: "Judicious", meaning: "বিচক্ষণ", pronunciation: "joo-dish-uhs", sentence: "We must make a judicious use of our natural resources.", synonyms: ["wise", "sensible", "careful"] },
+    { id: 2015, word: "Kindle", meaning: "জ্বালানো/উৎসাহিত করা", pronunciation: "kin-duhl", sentence: "The teacher's words kindled a passion for science in her.", synonyms: ["ignite", "inspire", "awaken"] },
+    { id: 2016, word: "Lucid", meaning: "সহজবোধ্য", pronunciation: "loo-sid", sentence: "His explanation was so lucid that everyone understood it.", synonyms: ["clear", "plain", "coherent"] },
+    { id: 2017, word: "Magnanimous", meaning: "উদার", pronunciation: "mag-nan-uh-muhs", sentence: "He was magnanimous enough to forgive his enemies.", synonyms: ["generous", "noble", "forgiving"] },
+    { id: 2018, word: "Nurture", meaning: "লালনপালন করা", pronunciation: "ner-cher", sentence: "It's important to nurture talent from a young age.", synonyms: ["care for", "develop", "support"] },
+    { id: 2019, word: "Optimistic", meaning: "আশাবাদী", pronunciation: "op-tuh-mis-tik", sentence: "She is optimistic about her chances of winning.", synonyms: ["hopeful", "positive", "cheerful"] },
+    { id: 2020, word: "Pinnacle", meaning: "চূড়া/শিখর", pronunciation: "pin-uh-kuhl", sentence: "Winning the trophy was the pinnacle of his career.", synonyms: ["peak", "summit", "top"] },
+    { id: 2021, word: "Quell", meaning: "দমন করা", pronunciation: "kwel", sentence: "The police worked to quell the protest quickly.", synonyms: ["suppress", "extinguish", "calm"] },
+    { id: 2022, word: "Radiant", meaning: "উজ্জ্বল", pronunciation: "rey-dee-uhnt", sentence: "The bride looked radiant in her white wedding dress.", synonyms: ["shining", "bright", "glowing"] },
+    { id: 2023, word: "Serene", meaning: "শান্ত", pronunciation: "suh-reen", sentence: "The lake looked beautiful and serene in the moonlight.", synonyms: ["calm", "peaceful", "tranquil"] },
+    { id: 2024, word: "Thrive", meaning: "উন্নতি করা", pronunciation: "thraiv", sentence: "The business continues to thrive despite the competition.", synonyms: ["prosper", "flourish", "grow"] },
+    { id: 2025, word: "Uphold", meaning: "সমর্থন করা", pronunciation: "uhp-hohld", sentence: "The court's decision will uphold the previous ruling.", synonyms: ["support", "sustain", "maintain"] },
+    { id: 2026, word: "Vibrant", meaning: "প্রাণবন্ত", pronunciation: "vahy-bruhnt", sentence: "The city has a vibrant nightlife and many attractions.", synonyms: ["lively", "energetic", "spirited"] },
+    { id: 2027, word: "Witty", meaning: "কৌতুকপূর্ণ", pronunciation: "wit-ee", sentence: "He is known for his witty remarks and funny stories.", synonyms: ["humorous", "clever", "amusing"] },
+    { id: 2028, word: "Yearning", meaning: "আকাঙ্ক্ষা", pronunciation: "yer-ning", sentence: "She had a deep yearning to visit her homeland.", synonyms: ["desire", "longing", "craving"] },
+    { id: 2029, word: "Zeal", meaning: "প্রবল উৎসাহ", pronunciation: "zeel", sentence: "He approached the task with great zeal and energy.", synonyms: ["enthusiasm", "passion", "eagerness"] },
+    { id: 2030, word: "Amical", meaning: "বন্ধুত্বপূর্ণ", pronunciation: "am-i-kuhl", sentence: "The two neighbors maintained an amical relationship.", synonyms: ["friendly", "peaceable", "harmonious"] }
 ];
 
 const loadLevelword = (id) => {

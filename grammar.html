@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Weekly - English Guru</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 min-h-screen font-sans">
+    <!-- Navbar -->
+    <header class="sticky top-0 z-[100] w-full bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="w-11/12 max-w-7xl mx-auto flex justify-between items-center py-4">
+            <!-- Logo -->
+            <div class="flex-none">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="relative w-11 h-11 bg-gradient-to-tr from-sky-600 to-sky-400 rounded-2xl flex items-center justify-center text-white shadow-sm group-hover:scale-105 group-hover:rotate-3 transition-all duration-500 overflow-hidden">
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-white/20 blur-xl"></div>
+                        <i class="fa-solid fa-book-open-reader text-xl relative z-10"></i>
+                    </div>
+                    <div class="flex flex-col leading-none">
+                        <span class="text-2xl font-black text-slate-800 tracking-tighter">English<span class="text-sky-500">Guru</span></span>
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mt-1">Mastery Platform</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="hidden lg:flex flex-1 justify-center items-center gap-10">
+                <a href="index.html" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">Home</a>
+                <a href="index.html#mistakes" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">Daily Mistakes</a>
+                <a href="grammar.html" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">Grammar</a>
+                <a href="reading.html" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">Reading</a>
+                <a href="spoken.html" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">Speaking</a>
+                <a href="index.html#FAQ" class="font-bold text-slate-600 hover:text-sky-500 transition-colors uppercase text-xs tracking-widest">FAQ</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="flex-none lg:hidden">
+                <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="p-4 mt-4 shadow-xl menu dropdown-content bg-white rounded-2xl z-[1] w-64 border border-slate-100 uppercase text-xs font-bold tracking-widest">
+                        <li><a href="index.html" class="py-3">Home</a></li>
+                        <li><a href="index.html#mistakes" class="py-3">Daily Mistakes</a></li>
+                        <li><a href="grammar.html" class="py-3">Grammar</a></li>
+                        <li><a href="reading.html" class="py-3">Reading</a></li>
+                        <li><a href="spoken.html" class="py-3">Speaking</a></li>
+                        <li><a href="index.html#FAQ" class="py-3">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="w-11/12 max-w-7xl mx-auto py-16">
+        <div class="text-center mb-20">
+            <span class="px-6 py-2 bg-gradient-to-r from-sky-100 to-blue-100 text-sky-700 rounded-full text-sm font-bold uppercase tracking-widest mb-6 inline-block border border-sky-200">Professional Curriculum 2025</span>
+            <h1 class="text-6xl font-black text-slate-800 mb-6 leading-tight">Spoken English Mastery<br><span class="text-sky-500">Grammar Weekly Modules</span></h1>
+            <p class="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">Systematically master advanced grammar concepts through structured weekly modules designed for professional communication excellence.</p>
+            
+            <!-- Progress Overview -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm">
+                    <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center text-sky-600 mx-auto mb-4">
+                        <i class="fa-solid fa-clock text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-2">12-Week Program</h3>
+                    <p class="text-sm text-slate-500">Comprehensive grammar mastery in structured modules</p>
+                </div>
+                <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm">
+                    <div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 mx-auto mb-4">
+                        <i class="fa-solid fa-certificate text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-2">Professional Level</h3>
+                    <p class="text-sm text-slate-500">Business and academic communication focus</p>
+                </div>
+                <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm">
+                    <div class="w-12 h-12 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-600 mx-auto mb-4">
+                        <i class="fa-solid fa-brain text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-2">Practical Application</h3>
+                    <p class="text-sm text-slate-500">Real-world scenarios and exercises</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module Navigation -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm mb-16">
+            <h2 class="text-2xl font-bold text-slate-800 mb-6 text-center">Select Learning Module</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <button onclick="showModule(1)" class="module-btn active flex flex-col items-center p-4 rounded-2xl font-bold bg-sky-500 text-white shadow-lg shadow-sky-100 transition-all hover:scale-105">
+                    <span class="text-xs mb-1">Week 1</span>
+                    <span class="text-sm">Tense Mastery</span>
+                </button>
+                <button onclick="showModule(2)" class="module-btn flex flex-col items-center p-4 rounded-2xl font-bold bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all hover:scale-105">
+                    <span class="text-xs mb-1">Week 2</span>
+                    <span class="text-sm">Sentence Structure</span>
+                </button>
+                <button onclick="showModule(3)" class="module-btn flex flex-col items-center p-4 rounded-2xl font-bold bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all hover:scale-105">
+                    <span class="text-xs mb-1">Week 3</span>
+                    <span class="text-sm">Common Errors</span>
+                </button>
+                <button onclick="showModule(4)" class="module-btn flex flex-col items-center p-4 rounded-2xl font-bold bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all hover:scale-105">
+                    <span class="text-xs mb-1">Week 4</span>
+                    <span class="text-sm">Modal Verbs</span>
+                </button>
+                <button onclick="showModule(5)" class="module-btn flex flex-col items-center p-4 rounded-2xl font-bold bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all hover:scale-105">
+                    <span class="text-xs mb-1">Week 5</span>
+                    <span class="text-sm">Conditionals</span>
+                </button>
+                <button onclick="showModule(6)" class="module-btn flex flex-col items-center p-4 rounded-2xl font-bold bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all hover:scale-105">
+                    <span class="text-xs mb-1">Week 6</span>
+                    <span class="text-sm">Passive Voice</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Content Dashboard -->
+        <div id="module-content" class="space-y-12">
+            <!-- Dynamic Content -->
+        </div>
+    </main>
+
+    <footer class="p-10 text-center bg-white border-t border-slate-100 mt-20">
+        <div class="flex flex-col items-center space-y-4">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-sky-500 rounded-lg flex items-center justify-center text-white text-xs">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                </div>
+                <span class="text-xl font-black text-slate-800 tracking-tight">English<span class="text-sky-500">Guru</span></span>
+            </a>
+            <p class="text-slate-400 text-sm font-medium">© 2025 English Guru Mastery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const modules = {
+            1: {
+                title: "Advanced Tense Mastery",
+                subtitle: "Week 1 - Temporal Precision in Professional Communication",
+                rule: "Mastering tenses requires understanding temporal relationships, aspectual nuances, and contextual appropriateness. Professional communication demands precision in expressing when actions occur, their duration, completion status, and relevance to the present moment.",
+                vocabulary: [
+                    "Temporal - relating to time or sequence of events",
+                    "Aspectual - concerning the internal structure of actions",
+                    "Nuance - subtle distinction or variation in meaning",
+                    "Contextual - dependent on surrounding circumstances",
+                    "Appropriateness - suitability for a particular situation",
+                    "Precision - exactness and accuracy in expression",
+                    "Duration - length of time something continues",
+                    "Completion - state of being finished or concluded",
+                    "Relevance - connection or applicability to current situation",
+                    "Sequential - following in logical order or succession"
+                ],
+                examples: [
+                    "I have been analyzing market trends for three consecutive quarters. (Present Perfect Continuous - ongoing relevance)",
+                    "By the time you receive this proposal, we will have completed the feasibility study. (Future Perfect - completion before future point)",
+                    "The CEO was reviewing the quarterly reports when the emergency meeting was called. (Past Continuous - interrupted action)",
+                    "We had already implemented the new protocols before the audit commenced. (Past Perfect - prior completion)",
+                    "The research team will be conducting interviews throughout next month. (Future Continuous - ongoing future action)"
+                ],
+                test: [
+                    { q: "By next quarter, our team ____ (develop) a comprehensive strategy for market expansion.", a: "will have developed" },
+                    { q: "The consultant ____ (analyze) the data since early morning when the client called.", a: "had been analyzing" },
+                    { q: "We ____ (implement) these changes before the new regulations take effect.", a: "will implement" },
+                    { q: "The presentation ____ (run) smoothly until the technical difficulties occurred.", a: "had been running" }
+                ]
+            },
+            2: {
+                title: "Sophisticated Sentence Architecture",
+                subtitle: "Week 2 - Constructing Compelling Professional Discourse",
+                rule: "Effective sentence construction involves strategic use of coordination, subordination, and modification to create clarity, emphasis, and flow. Professional writing requires varied sentence structures that enhance readability while maintaining grammatical precision.",
+                vocabulary: [
+                    "Architecture - structural design and organization",
+                    "Sophisticated - complex and refined in design",
+                    "Coordination - joining elements of equal importance",
+                    "Subordination - making one element dependent on another",
+                    "Modification - adding descriptive or limiting information",
+                    "Emphasis - special importance or prominence given",
+                    "Readability - ease with which text can be understood",
+                    "Precision - exactness and accuracy in language use",
+                    "Discourse - formal discussion or communication",
+                    "Strategic - carefully planned for maximum effectiveness"
+                ],
+                examples: [
+                    "Although the quarterly results exceeded expectations, the board remained cautious about future investments. (Complex - subordinate clause first)",
+                    "The marketing campaign was innovative and engaging, yet it failed to generate the anticipated revenue. (Compound - contrasting ideas)",
+                    "Having analyzed the competitive landscape thoroughly, the strategic planning committee recommended immediate market entry. (Complex - participial phrase)",
+                    "The proposal, which was meticulously researched and professionally presented, received unanimous approval from stakeholders. (Complex - embedded relative clause)",
+                    "Not only did the team meet the deadline, but they also exceeded quality expectations significantly. (Compound-complex - emphasis structure)"
+                ],
+                test: [
+                    { q: "Combine using a participial phrase: 'The manager reviewed the reports. She identified several areas for improvement.'", a: "Having reviewed the reports, the manager identified several areas for improvement." },
+                    { q: "Create a complex sentence with 'Although' using: 'The project was challenging. The team completed it successfully.'", a: "Although the project was challenging, the team completed it successfully." },
+                    { q: "Identify the sentence type: 'The conference was informative, but the networking sessions were even more valuable.'", a: "Compound" },
+                    { q: "Rewrite using subordination: 'The presentation was excellent. It convinced the investors.'", a: "The presentation was so excellent that it convinced the investors." }
+                ]
+            },
+            3: {
+                title: "Professional Error Elimination",
+                subtitle: "Week 3 - Achieving Linguistic Excellence",
+                rule: "Professional communication requires meticulous attention to grammatical accuracy, appropriate register, and stylistic consistency. Common errors in subject-verb agreement, pronoun reference, and word choice can undermine credibility and clarity in business contexts.",
+                vocabulary: [
+                    "Elimination - complete removal or eradication",
+                    "Meticulous - showing great attention to detail",
+                    "Accuracy - correctness and precision in language",
+                    "Register - level of formality in language use",
+                    "Consistency - uniformity and coherence throughout",
+                    "Credibility - trustworthiness and reliability",
+                    "Undermine - weaken or damage gradually",
+                    "Contexts - circumstances or settings of communication",
+                    "Excellence - extremely high quality or standard",
+                    "Linguistic - relating to language and its structure"
+                ],
+                examples: [
+                    "Incorrect: Each of the departments have their own budget. → Correct: Each of the departments has its own budget. (Subject-verb agreement)",
+                    "Incorrect: Between you and I, this proposal needs revision. → Correct: Between you and me, this proposal needs revision. (Pronoun case)",
+                    "Incorrect: The data shows that profits has increased. → Correct: The data show that profits have increased. (Collective noun agreement)",
+                    "Incorrect: Hopefully, the meeting will be productive. → Correct: I hope the meeting will be productive. (Adverb misuse)",
+                    "Incorrect: The team is confident in their abilities. → Correct: The team members are confident in their abilities. (Pronoun-antecedent agreement)"
+                ],
+                test: [
+                    { q: "Correct the error: 'Neither the manager nor the employees was satisfied with the outcome.'", a: "Neither the manager nor the employees were satisfied with the outcome." },
+                    { q: "Fix the pronoun error: 'The committee will announce their decision tomorrow.'", a: "The committee will announce its decision tomorrow." },
+                    { q: "Correct: 'The number of applications have increased significantly.'", a: "The number of applications has increased significantly." },
+                    { q: "Fix: 'Who did you give the report to?'", a: "To whom did you give the report?" }
+                ]
+            },
+            4: {
+                title: "Modal Verb Mastery",
+                subtitle: "Week 4 - Expressing Degrees of Certainty and Obligation",
+                rule: "Modal verbs express attitudes, possibilities, permissions, obligations, and degrees of certainty. Professional communication requires precise modal usage to convey appropriate levels of formality, politeness, and assertiveness in different business contexts.",
+                vocabulary: [
+                    "Certainty - confidence in the truth or accuracy",
+                    "Obligation - duty or commitment to do something",
+                    "Assertiveness - confident and forceful behavior",
+                    "Formality - adherence to established conventions",
+                    "Politeness - courteous and respectful behavior",
+                    "Precision - exactness in expression and meaning",
+                    "Attitudes - settled ways of thinking or feeling",
+                    "Possibilities - things that may happen or be true",
+                    "Permissions - authorization to do something",
+                    "Conventions - accepted standards or practices"
+                ],
+                examples: [
+                    "You must submit the quarterly reports by Friday. (Strong obligation/requirement)",
+                    "The client might reconsider the proposal if we adjust the timeline. (Possibility/uncertainty)",
+                    "Could you please review the contract before the meeting? (Polite request)",
+                    "The project should be completed within the allocated budget. (Expectation/probability)",
+                    "We would appreciate your feedback on the preliminary findings. (Conditional politeness)"
+                ],
+                test: [
+                    { q: "Choose the appropriate modal: 'You ____ wear formal attire to the board meeting.' (strong recommendation)", a: "should" },
+                    { q: "Complete: 'The presentation ____ be ready by tomorrow.' (high probability)", a: "should" },
+                    { q: "Select the modal: '____ I suggest an alternative approach?' (polite suggestion)", a: "May" },
+                    { q: "Fill in: 'Employees ____ not disclose confidential information.' (prohibition)", a: "must" }
+                ]
+            },
+            5: {
+                title: "Conditional Constructions",
+                subtitle: "Week 5 - Hypothetical and Consequential Reasoning",
+                rule: "Conditional sentences express relationships between conditions and consequences, enabling sophisticated reasoning in professional discourse. Mastery involves understanding real, unreal, and mixed conditional structures for effective negotiation, planning, and analysis.",
+                vocabulary: [
+                    "Constructions - grammatical structures or patterns",
+                    "Hypothetical - based on assumptions rather than facts",
+                    "Consequential - following as a result or effect",
+                    "Reasoning - logical thinking and argumentation",
+                    "Discourse - formal communication or discussion",
+                    "Negotiation - discussion to reach agreement",
+                    "Analysis - detailed examination of elements",
+                    "Sophisticated - complex and refined in nature",
+                    "Relationships - connections between different elements",
+                    "Consequences - results or effects of actions"
+                ],
+                examples: [
+                    "If we implement this strategy, we will increase market share significantly. (First conditional - real possibility)",
+                    "If I were the project manager, I would prioritize risk assessment. (Second conditional - hypothetical present)",
+                    "If the company had invested in technology earlier, it would have avoided current challenges. (Third conditional - hypothetical past)",
+                    "Had we known about the regulatory changes, we would have adjusted our approach accordingly. (Inverted third conditional)",
+                    "Should you require additional information, please contact our research department immediately. (Formal first conditional)"
+                ],
+                test: [
+                    { q: "Complete the third conditional: 'If the team ____ (prepare) better, they ____ (succeed) in the presentation.'", a: "had prepared, would have succeeded" },
+                    { q: "Create a second conditional: 'What would you do if you ____ (be) in charge of this project?'", a: "were" },
+                    { q: "Form a mixed conditional: 'If we ____ (invest) in training last year, our productivity ____ (be) higher now.'", a: "had invested, would be" },
+                    { q: "Complete: '____ the budget allow, we will expand the research team.' (formal condition)", a: "Should" }
+                ]
+            },
+            6: {
+                title: "Passive Voice Proficiency",
+                subtitle: "Week 6 - Strategic Focus and Professional Objectivity",
+                rule: "Passive voice construction shifts focus from the agent to the action or recipient, creating objectivity and formality essential in professional, academic, and technical communication. Strategic passive usage enhances diplomatic expression and emphasizes results over responsibility.",
+                vocabulary: [
+                    "Proficiency - high degree of competence or skill",
+                    "Strategic - carefully planned for specific purposes",
+                    "Objectivity - unbiased and impartial perspective",
+                    "Diplomatic - tactful and sensitive in communication",
+                    "Recipient - person or thing receiving action",
+                    "Agent - person or thing performing action",
+                    "Construction - grammatical formation or structure",
+                    "Formality - adherence to official or proper standards",
+                    "Technical - specialized or professional in nature",
+                    "Responsibility - accountability for actions or decisions"
+                ],
+                examples: [
+                    "The quarterly budget has been approved by the finance committee. (Emphasis on approval, not approver)",
+                    "Significant improvements were observed in customer satisfaction metrics. (Objective reporting)",
+                    "The proposal will be reviewed by senior management next week. (Future passive - process focus)",
+                    "Mistakes were made in the initial assessment phase. (Diplomatic - avoiding blame)",
+                    "The new protocols are being implemented across all departments currently. (Ongoing passive process)"
+                ],
+                test: [
+                    { q: "Convert to passive: 'The research team conducted extensive market analysis.'", a: "Extensive market analysis was conducted by the research team." },
+                    { q: "Change to active: 'The decision was made by the board of directors.'", a: "The board of directors made the decision." },
+                    { q: "Create passive with modal: 'We should complete the project by December.'", a: "The project should be completed by December." },
+                    { q: "Form present perfect passive: 'The company has launched three new products.'", a: "Three new products have been launched by the company." }
+                ]
+            }
+        };
+
+        let currentVocabPage = 1;
+        let vocabPerPage = 11;
+        let currentModuleVocab = [];
+
+        function showModule(id) {
+            const mod = modules[id];
+            
+            // Update buttons
+            document.querySelectorAll('.module-btn').forEach((btn, idx) => {
+                if (idx + 1 === id) {
+                    btn.className = "module-btn flex flex-col items-center p-4 rounded-2xl font-bold bg-sky-500 text-white shadow-lg shadow-sky-100 transition-all hover:scale-105";
+                } else {
+                    btn.className = "module-btn flex flex-col items-center p-4 rounded-2xl font-bold bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 transition-all hover:scale-105";
+                }
+            });
+
+            // Store current vocabulary and reset pagination
+            currentModuleVocab = mod.vocabulary;
+            currentVocabPage = 1;
+
+            let examplesHtml = mod.examples.map(ex => `<li class="flex items-start gap-3 p-4 bg-slate-50 rounded-2xl border border-slate-100 font-medium text-slate-700 hover:bg-green-50 hover:border-green-100 transition-colors"><i class="fa-solid fa-circle-play text-green-500 mt-1"></i> <span class="leading-relaxed">${ex}</span></li>`).join('');
+            
+            let testHtml = mod.test.map((t, index) => `
+                <div class="p-6 bg-white border border-slate-100 rounded-3xl shadow-sm mb-4 hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-8 h-8 bg-slate-900 rounded-xl flex items-center justify-center text-white text-sm font-bold">${index + 1}</div>
+                        <p class="font-bold text-slate-800 flex-1">${t.q}</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <input type="text" placeholder="Type your answer here..." class="input input-sm border-slate-200 focus:border-sky-500 rounded-xl flex-1 bg-slate-50 px-4 py-3">
+                        <button onclick="this.previousElementSibling.value='${t.a}'; this.innerText='✓ Correct'; this.className='btn btn-sm btn-success text-white px-6 rounded-xl'" class="btn btn-sm bg-slate-900 border-none text-white px-6 rounded-xl hover:bg-slate-700 transition-colors">Check Answer</button>
+                    </div>
+                </div>
+            `).join('');
+
+            document.getElementById('module-content').innerHTML = `
+                <div class="grid grid-cols-1 xl:grid-cols-3 gap-8">
+                    <!-- Main Content -->
+                    <div class="xl:col-span-2 space-y-8">
+                        <div class="bg-gradient-to-br from-sky-500 to-blue-600 text-white rounded-[40px] p-10 shadow-xl relative overflow-hidden">
+                            <div class="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
+                            <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-white/5 rounded-full blur-2xl"></div>
+                            <div class="relative z-10">
+                                <h2 class="text-4xl font-black mb-3">${mod.title}</h2>
+                                <p class="text-sky-100 font-bold uppercase tracking-widest text-sm mb-6">${mod.subtitle}</p>
+                                <div class="bg-white/10 rounded-2xl p-6 backdrop-blur-sm">
+                                    <h4 class="text-xl font-bold mb-4 flex items-center gap-3">
+                                        <i class="fa-solid fa-lightbulb"></i>
+                                        Core Principle
+                                    </h4>
+                                    <p class="text-sky-50 leading-relaxed text-lg">${mod.rule}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vocabulary Section -->
+                        <div class="bg-white rounded-[40px] p-8 border border-slate-100 shadow-sm">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-12 h-12 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-600">
+                                    <i class="fa-solid fa-spell-check text-xl"></i>
+                                </div>
+                                <h4 class="text-2xl font-black text-slate-800">Professional Vocabulary</h4>
+                            </div>
+                            <ul id="vocabulary-list" class="space-y-3 mb-6">
+                                <!-- Vocabulary items will be loaded here -->
+                            </ul>
+                            <!-- Pagination Controls -->
+                            <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                                <button onclick="changeVocabPage(-1)" id="vocab-prev" class="px-5 py-2 bg-slate-100 hover:bg-sky-100 text-slate-600 hover:text-sky-600 rounded-xl text-sm font-bold transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
+                                    <i class="fa-solid fa-chevron-left mr-2"></i>Previous
+                                </button>
+                                <div class="text-sm font-bold">
+                                    <span id="vocab-page-info" class="text-sky-600">Page 1</span>
+                                </div>
+                                <button onclick="changeVocabPage(1)" id="vocab-next" class="px-5 py-2 bg-slate-100 hover:bg-sky-100 text-slate-600 hover:text-sky-600 rounded-xl text-sm font-bold transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
+                                    Next<i class="fa-solid fa-chevron-right ml-2"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Examples Section -->
+                        <div class="bg-white rounded-[40px] p-8 border border-slate-100 shadow-sm">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center text-green-600">
+                                    <i class="fa-solid fa-comments text-xl"></i>
+                                </div>
+                                <h4 class="text-2xl font-black text-slate-800">Professional Examples</h4>
+                            </div>
+                            <ul class="space-y-3">
+                                ${examplesHtml}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Test Section -->
+                    <div class="bg-white rounded-[50px] p-8 border border-slate-100 shadow-sm h-fit sticky top-8">
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="w-12 h-12 bg-slate-900 rounded-2xl flex items-center justify-center text-white">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h4 class="text-2xl font-black text-slate-800">Mastery Assessment</h4>
+                        </div>
+                        ${testHtml}
+                        <div class="mt-6 p-4 bg-sky-50 rounded-2xl border border-sky-100">
+                            <p class="text-sm text-sky-700 font-medium">
+                                <i class="fa-solid fa-info-circle mr-2"></i>
+                                Complete all exercises to master this module and advance to the next level.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            // Display first page of vocabulary
+            displayVocabPage();
+        }
+
+        function displayVocabPage() {
+            const startIndex = (currentVocabPage - 1) * vocabPerPage;
+            const endIndex = startIndex + vocabPerPage;
+            const pageVocab = currentModuleVocab.slice(startIndex, endIndex);
+            const totalPages = Math.ceil(currentModuleVocab.length / vocabPerPage);
+            
+            // Display vocabulary items
+            const vocabularyHtml = pageVocab.map(vocab => `<li class="flex items-start gap-3 p-4 bg-slate-50 rounded-2xl border border-slate-100 hover:bg-sky-50 hover:border-sky-100 transition-colors"><i class="fa-solid fa-book text-sky-500 mt-1"></i> <span class="text-slate-700 leading-relaxed">${vocab}</span></li>`).join('');
+            document.getElementById('vocabulary-list').innerHTML = vocabularyHtml;
+            
+            // Update pagination info
+            document.getElementById('vocab-page-info').innerText = `Page ${currentVocabPage} of ${totalPages}`;
+            
+            // Update button states
+            document.getElementById('vocab-prev').disabled = currentVocabPage === 1;
+            document.getElementById('vocab-next').disabled = currentVocabPage === totalPages;
+        }
+
+        function changeVocabPage(direction) {
+            const totalPages = Math.ceil(currentModuleVocab.length / vocabPerPage);
+            const newPage = currentVocabPage + direction;
+            
+            if (newPage >= 1 && newPage <= totalPages) {
+                currentVocabPage = newPage;
+                displayVocabPage();
+            }
+        }
+
+        // Init
+        showModule(1);
+    </script>
+</body>
+</html>
