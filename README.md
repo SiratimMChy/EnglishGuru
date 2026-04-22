@@ -1,10 +1,10 @@
-# 🌐 English Janala (English Guru)
+# 🌐 English Guru
 
 ![Premium Design](https://img.shields.io/badge/Design-Premium-skyBlue)
 ![Platform](https://img.shields.io/badge/Platform-Web-emerald)
 ![Status](https://img.shields.io/badge/Status-Active-blue)
 
-**English Janala** is a high-fidelity, interactive English learning platform designed to help students master vocabulary, grammar, and pronunciation through a premium user experience. Built with a unified "Sky Blue" design system, it offers dynamic daily updates and curated educational content.
+**English Guru** is a high-fidelity, interactive English learning platform designed to help students master vocabulary, grammar, and pronunciation through a premium user experience. Built with a unified "Sky Blue" design system, it offers dynamic daily updates and curated educational content.
 
 ---
 
@@ -67,3 +67,4 @@ Created with ❤️ by **Siratim Mustakim Chowdhury**. Special thanks to the **P
 ---
 
 © 2024–2026 **SMC Technologies.** All rights reserved.
+ 
